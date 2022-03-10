@@ -1,0 +1,61 @@
+<div class="mobileMenuContainer">
+    <div class="mobileMenu"> 
+        <div class="buttonMobileMenu">
+            <button onclick="showHide()"><i class="fa-solid fa-xmark"></i></button>
+        </div>         
+        <div class="navItemContainer">
+            
+            <div>
+                <span><a href="" onclick="showHide()">Coup de Coeur </a><i class="fa-solid fa-heart"></i></span>
+            </div>
+
+            <div>
+                <span><a href="#contact" onclick="showHide()">Me Contacter</a><i class="fa-solid fa-comment"></i></span>
+            </div>
+
+            <div>
+                <span><a href="#" onclick="showHide()">Se connecter</a></span>
+            </div>
+
+            <div>
+                <span><a href="#" onclick="showHide()">S'inscrire</a></span>
+            </div>
+        </div>
+        <div class="logo">
+            <a href="<?= makeURL()?>/mimey/index">
+                <img src="./assets/baseImg/logo_light.png" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+
+<header id="begin"> 
+    <nav>
+        <div class="logo">
+            <a href="<?= makeURL()?>/mimey/index">
+                <img src="./assets/baseImg/logo_light.png" alt="">
+            </a>
+        </div>
+        <!-- Menu normal -->
+        <div class="navItemContainer">
+            <div class="navItems">
+                <div>
+                    <span><a href="">Coup de Coeur </a><i class="fa-solid fa-heart"></i></span>
+                </div>
+                
+                <div>
+                    <span><a href="#contact">Me Contacter</a><i class="fa-solid fa-comment"></i></span>
+                </div>
+            </div>
+            <div>
+                <a href="<?= makeURL()?>/mimey/pages/login">Se connecter</a>
+                <a href="#">S'inscrire</a>
+            </div>
+        </div>
+        <!-- Fin menu normal --> 
+
+        <div class="buttonMobileMenu">
+            <button onclick="showHide()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>        
+</header>

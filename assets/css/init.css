@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "fontastique";
+    src: url("/assets/font/fontastique.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "fontastique";
+    scroll-behavior: smooth;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    background-color: #F8FAFB;
+    position: relative;
+}

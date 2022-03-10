@@ -1,0 +1,21 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.copyright a {
+    color: #D9A63B;
+    font-weight: bold;
+}

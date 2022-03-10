@@ -1,0 +1,314 @@
+header {
+    position: relative;
+    width: 100%;
+    height: 9vh;
+    background-color: white;
+    box-shadow: 0px 5px 15px lightgray;
+}
+
+header nav {
+    position: relative;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+header .logo a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+header .logo img {
+    width: auto;
+    height: 70%;
+}
+
+header .navItemContainer {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header .navItems {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .sign {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fa-heart {
+    color: lightcoral;
+}
+
+.fa-comment {
+    color: #404EED;
+}
+
+header a {
+    padding: 6px 0;
+    margin: 0 15px;
+    color: black;
+    background: none;
+    border: none;
+    border-bottom: solid 1px rgba(0, 0, 0, 0);
+    transition: all 0.2s;
+    font-size: large;
+}
+
+header a:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #D9A63B;
+}
+
+header .buttonMobileMenu {
+    display: none;
+}
+
+header .buttonMobileMenu button {
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+header .buttonMobileMenu button:hover {
+    cursor: pointer;
+}
+
+
+.mobileMenuContainer {
+    transition: all 2s;
+    font-size: 20px;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: none;
+}
+
+.mobileMenu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.mobileMenu .buttonMobileMenu {
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.mobileMenu .buttonMobileMenu button{
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+.mobileMenu .navItemContainer {
+    margin-top: 80px;
+    width: 100%;
+    padding: 0 50px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.mobileMenu .navItemContainer a {
+    margin-right: 15px;
+}
+
+.mobileMenu .logo{
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.mobileMenu .logo img{
+    width: 100%;
+    height: auto;
+}
+
+.hide {
+    display: none;
+}
+
+footer {
+    padding-top: 20px;
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #282828;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .info {
+    height: 80%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+footer .logo a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .logo a img {
+    height: 70%;
+    width: auto;
+}
+
+footer .socialContainer {
+    color: white;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .socialContainer h2 {
+    position: relative;
+    color: #FFFFFF;
+}
+
+footer .socialContainer h2::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 15%;
+    height: 3px;
+    background-color: #D9A63B;
+}
+
+footer .social {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .social div {
+    width: 30%;
+    font-size: 40px;
+}
+
+footer .social div .fa-linkedin-in{
+    color: white;
+}
+footer .social div .fa-github{
+    color: white;
+}
+footer .social div .fa-discord{
+    transition: all 0.2s;
+    color: white;
+}
+
+footer .social div a:hover .fa-discord {
+    color: #404EED;
+}
+
+footer .social div a:hover .fa-linkedin-in {
+    color: #0A66C2;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: black;
+    color: #FFFFFF;
+}
+
+footer .copyright a {
+    color: #D9A63B;
+    font-weight: bold;
+}
+
+::-webkit-scrollbar {
+    background-color: black;
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #D9A63B;
+    border-radius: 6px;
+}
+
+@media only screen and (max-width: 1250px) {
+    
+    header .navItemContainer {
+        display: none;
+    }
+
+    header .buttonMobileMenu {
+        display: block;
+    }
+
+    footer {
+        height: fit-content;
+        justify-content: space-between;
+    }
+
+    footer .info {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    footer .socialContainer {
+        width: 50%;
+    }
+
+    footer .social {
+        margin-bottom: 50px;
+    }
+    
+    footer .logo a img {
+        height: auto;
+        width: 55%;
+        margin-bottom: 25px;
+    }
+}
